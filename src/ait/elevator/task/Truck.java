@@ -19,7 +19,7 @@ public class Truck implements Runnable{
         for (int i = 0; i < nRaces; i++) {
             for (int j = 0; j < elevators.length; j++) {
                 synchronized (elevators[j]) {
-                    elevators[j].add(capacity/2);
+                    elevators[j].add(capacity/elevators.length);
                 }
             }
         }
